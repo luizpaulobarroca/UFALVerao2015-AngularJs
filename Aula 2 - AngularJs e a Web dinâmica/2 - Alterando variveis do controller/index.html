@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script src="../lib/angular.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div ng-controller="GreetingController">
+            <p>{{greeting}}</p>
+            <button class="btn btn-primary" ng-click="anotherGreeting()">Another Greeting</button>
+        </div>
+    </body>
+</html>

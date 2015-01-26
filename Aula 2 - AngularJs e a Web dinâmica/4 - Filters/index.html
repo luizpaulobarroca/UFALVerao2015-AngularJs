@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script src="../lib/angular.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div ng-controller="ListController">
+            <input type="text" ng-model="query"/>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Age
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="account in accountsList | filter: query">
+                        <th>
+                            {{account.name}}
+                        </th>
+                        <th>
+                            {{account.age}}
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
