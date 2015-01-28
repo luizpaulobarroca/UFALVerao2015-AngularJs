@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exemplo ng-hide</title> 
+        
+        <script src="../lib/angular.js"></script>  
+    </head>
+    <body ng-app="">
+        <div ng-init="number=15">
+            <p ng-hide="true">Eu não sou visível</p>
+		    <p ng-hide="false">Eu sou visível</p>
+		    <p ng-hide="number > 100">False</p>
+        </div>
+    </body>
+</html>

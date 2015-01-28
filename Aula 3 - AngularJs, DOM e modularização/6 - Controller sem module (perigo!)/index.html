@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exemplo ng-click</title> 
+        
+        <script src="../lib/angular.js"></script>
+        <script src="app.js"></script>  
+    </head>
+    <body ng-app="">
+        <div ng-controller="myController">
+            <button ng-click="increment()">Increment</button>
+            <br /><br />
+            {{ value }}
+        </div>
+    </body>
+</html>

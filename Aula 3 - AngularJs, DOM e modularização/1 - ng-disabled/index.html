@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exemplo ng-disabled</title> 
+        
+        <script src="../lib/angular.js"></script>  
+    </head>
+    <body ng-app="">
+        <div ng-init="mySwitch=true">
+            <button ng-disabled="mySwitch">Click me!</button>
+            <br /><br />
+            <input type="checkbox" ng-model="mySwitch" /> {{ mySwitch }}
+        </div>
+    </body>
+</html>

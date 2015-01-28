@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exemplo ng-show</title> 
+        
+        <script src="../lib/angular.js"></script>  
+    </head>
+    <body ng-app="">
+        <div ng-init="number=15">
+            <p ng-show="true">Eu sou visível</p>
+		    <p ng-show="false">Eu não sou visível</p>
+		    <p ng-show="number < 100">True</p>
+        </div>
+    </body>
+</html>
