@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       <title>Angular JS Views</title>
+       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+       <script src="app.js"></script>
+    </head>
+    <body ng-app="myApp">
+        <p><a href="#addPost">Add Post</a></p>
+        <p><a href="#editPost">Edit Post</a></p>
+        <div ng-view=""></div>
+    </body>
+</html>
